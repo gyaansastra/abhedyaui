@@ -32,4 +32,4 @@ rm -fr ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 wget https://raw.githubusercontent.com/gyaansastra/abhedyaui/main/xfce4-desktop.xml -P ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 #Rest XFCE to Default
-rm -rf ~/.config/xfce4
+#rm -rf ~/.config/xfce4
