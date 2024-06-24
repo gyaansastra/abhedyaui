@@ -1,27 +1,4 @@
 #! /bin/bash
-#install xfce
-sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install xfce4
-sudo apt install xfce4-session
-
-#configure a remote desktop service
-sudo apt-get -y install xrdp
-sudo systemctl enable xrdp
-
-# Ubuntu 20, you need to give certificate access to an xrdp user
-sudo adduser xrdp ssl-cert
-
-#Configure xrdp to use xfce
-echo xfce4-session >~/.xsession
-
-#Restart the xrdp service
-sudo service xrdp restart
-
-
-#Install Tailscale
-curl -fsSL https://tailscale.com/install.sh | sh
-sudo tailscale up --authkey tskey-auth-kJZwZRysi611CNTRL-5Cg5ad1BC1bVTRKusvTh1b6tcsutU54VD
-
 #Install UI Folders
 mkdir ~/.icons ~/.themes ~/.background ~/.fonts
 
